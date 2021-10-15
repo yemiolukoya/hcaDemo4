@@ -23,6 +23,11 @@ public class HowToPayForYourTreatmentStep {
 	@Given("user fill in Patient details")
 	public void user_fill_in_patient_details() {
 
+
+		opp.enterHcaAccountNumber();
+		
+		opp.enterFirstName();
+		opp.enterSurName();
 	}
 
 	@Given("user fill in Billing details")

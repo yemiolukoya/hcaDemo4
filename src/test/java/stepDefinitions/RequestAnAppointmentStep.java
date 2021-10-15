@@ -110,12 +110,7 @@ public class RequestAnAppointmentStep {
 		// create object for Online Payment page
 		opp = new OnlinePaymentsPage(driver);
 		
-		hp.clickHowToPayForYourTreatment();
-
-		opp.enterHcaAccountNumber();
 		
-		opp.enterFirstName();
-		opp.enterSurName();
 		// hp.clickBookAnAppointment();
 	}
 
