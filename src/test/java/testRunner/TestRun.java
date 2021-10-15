@@ -6,25 +6,26 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions
-(
+@CucumberOptions(
 
-		//features = { "/Users/yemioluv/eclipse-workspace/HCA_Healthcare/features" },
+		// features = { "/Users/yemioluv/eclipse-workspace/HCA_Healthcare/features" },
 		// features = "@target/rerun.txt",
-		
-		//HowToPayForYourTreatment Runner
-		features = { "/Users/yemioluv/eclipse-workspace/HCA_Healthcare/features/HowToPayForYourTreatment.feature" },
-				//features = { "/Users/yemioluv/eclipse-workspace/HCA_Healthcare/features/BookAnAppointment.feature" },
 
-		glue = "stepDefinitions",
-		dryRun = false,
+		
+		// HowToPayForYourTreatment Feature
+		features = { "/Users/yemioluv/eclipse-workspace/HCA_HealthCare_3/features/HowToPayForYourTreatment.feature" },
+		
+		
+		 //features = {"/Users/yemioluv/eclipse-workspace/HCA_Healthcare/features/BookAnAppointment.feature"},
+
+		glue = "stepDefinitions", dryRun = false,
 		// tags="@sanity and @regression",
 		// tags="@sanity and not @regression"
 		// tags="smoke"
 		plugin = { "pretty", // "html:reports/myreport.html",
 				"rerun:target/rerun.txt", // To capture failures
-				"json:target/json/file.json", 
-				//"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+				"json:target/json/file.json",
+		// "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 
 		}, monochrome = true
 

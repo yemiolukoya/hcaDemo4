@@ -4,15 +4,18 @@ import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.en.*;
 import pageObjects.HomePage;
+import pageObjects.OnlinePaymentsPage;
 
 public class HowToPayForYourTreatmentStep {
 
 	WebDriver driver;
 	HomePage hp;
+	OnlinePaymentsPage opp;
 
 	@Given("user click on How to pay for your treatment tab")
 	public void user_click_on_how_to_pay_for_your_treatment_tab() {
 		hp = new HomePage(driver);
+		opp = new OnlinePaymentsPage(driver);
 		hp.clickHowToPayForYourTreatment();
 
 	}

@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import java.time.Duration;
 import java.util.ResourceBundle;
+import java.util.Set;
 
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -19,18 +20,19 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert; 
+import org.junit.Assert;
 import pageObjects.HomePage;
+import pageObjects.OnlinePaymentsPage;
 import pageObjects.RequestAnAppointmentPage;
 
 public class RequestAnAppointmentStep {
-	
 
 	WebDriver driver;
-	
+
 	HomePage hp;
 	RequestAnAppointmentPage rap;
-	
+	OnlinePaymentsPage opp;
+
 	Logger logger; // for logging
 
 	ResourceBundle rb; // for reading properties file
@@ -61,9 +63,6 @@ public class RequestAnAppointmentStep {
 		// driver.quit();
 
 	}
-
-
-
 
 	@Given("user launch the browser")
 	public void user_launch_the_browser() {
@@ -101,12 +100,23 @@ public class RequestAnAppointmentStep {
 
 		// create object for request an appointment page
 		rap = new RequestAnAppointmentPage(driver);
+
+	
+
 	}
 
 	@When("user click book an appointment")
-	public void user_click_book_an_appointment() {
+	public void user_click_book_an_appointment() throws InterruptedException {
+		// create object for Online Payment page
+		opp = new OnlinePaymentsPage(driver);
+		
+		hp.clickHowToPayForYourTreatment();
 
-		hp.clickBookAnAppointment();
+		opp.enterHcaAccountNumber();
+		
+		opp.enterFirstName();
+		opp.enterSurName();
+		// hp.clickBookAnAppointment();
 	}
 
 	@When("user choose I am a patient option")
