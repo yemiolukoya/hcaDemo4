@@ -12,10 +12,11 @@ import io.cucumber.junit.CucumberOptions;
 		// features = "@target/rerun.txt",
 
 		
-		// HowToPayForYourTreatment Feature
+		// How To Pay For Your Treatment Feature
 		features = { "/Users/yemioluv/eclipse-workspace/HCA_HealthCare_3/features/HowToPayForYourTreatment.feature" },
 		
 		
+		// Book An appointment feature
 		 //features = {"/Users/yemioluv/eclipse-workspace/HCA_Healthcare/features/BookAnAppointment.feature"},
 
 		glue = "stepDefinitions", dryRun = false,
