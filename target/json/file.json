@@ -1,0 +1,144 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-15T15:30:05.386Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.util.MissingResourceException: Can\u0027t find bundle for base name config, locale en_GB\n\tat java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:1573)\n\tat java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1396)\n\tat java.util.ResourceBundle.getBundle(ResourceBundle.java:782)\n\tat stepDefinitions.RequestAnAppointmentStep.setUp(RequestAnAppointmentStep.java:46)\n",
+              "duration": 1736000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepDefinitions.RequestAnAppointmentStep.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Make payment with valid details",
+        "description": "",
+        "id": "how-to-pay-for-your-treatment;make-payment-with-valid-details",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat stepDefinitions.RequestAnAppointmentStep.tearDown(RequestAnAppointmentStep.java:57)\n",
+              "duration": 9000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepDefinitions.RequestAnAppointmentStep.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user launch the browser",
+            "match": {
+              "location": "stepDefinitions.RequestAnAppointmentStep.user_launch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "opens URL \"https://www.hcahealthcare.co.uk/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.hcahealthcare.co.uk/\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.RequestAnAppointmentStep.opens_url(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click on How to pay for your treatment tab",
+            "match": {
+              "location": "stepDefinitions.HowToPayForYourTreatmentStep.user_click_on_how_to_pay_for_your_treatment_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user fill in Patient details",
+            "match": {
+              "location": "stepDefinitions.HowToPayForYourTreatmentStep.user_fill_in_patient_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user fill in Billing details",
+            "match": {
+              "location": "stepDefinitions.HowToPayForYourTreatmentStep.user_fill_in_billing_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user fill in Payment details",
+            "match": {
+              "location": "stepDefinitions.HowToPayForYourTreatmentStep.user_fill_in_payment_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user click pay securely now",
+            "match": {
+              "location": "stepDefinitions.HowToPayForYourTreatmentStep.user_click_pay_securely_now()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user should be navigated to payment page",
+            "match": {
+              "location": "stepDefinitions.HowToPayForYourTreatmentStep.user_should_be_navigated_to_payment_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "How to pay for your treatment",
+    "description": "",
+    "id": "how-to-pay-for-your-treatment",
+    "keyword": "Feature",
+    "uri": "file:///Users/yemioluv/eclipse-workspace/HCA_Healthcare/features/HowToPayForYourTreatment.feature",
+    "tags": []
+  }
+]
